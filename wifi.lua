@@ -8,8 +8,6 @@ end
 function wifiGetSSIDs()
 end
 
-
-
 function wifiConnectStation(SSID, SSIDpwd)
          stationCfg={}
          stationCfg.ssid = SSID
