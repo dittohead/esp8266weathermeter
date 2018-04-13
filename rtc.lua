@@ -3,7 +3,7 @@
 require "config"
 
 function syncRTC()
-   sntp.sync(server_host,
+   sntp.sync(RTC_HOSTS,
        function(sec, usec, server, info)
         print('time sync', sec, usec, server)
         end,

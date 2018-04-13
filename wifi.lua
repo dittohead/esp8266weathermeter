@@ -6,7 +6,14 @@ function wifiConfig()
 end
 
 function wifiGetSSIDs()
+-- get SSIDs for trying to connect according to saved
 end
+
+function wifiRSSIval()
+rssi=wifi.sta.getrssi()
+return rssi
+end
+         
 
 function wifiConnectStation(SSID, SSIDpwd)
          stationCfg={}
